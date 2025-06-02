@@ -52,54 +52,48 @@ Este proyecto implementa un sistema de monitoreo de condiciones ambientales usan
 *Lectura de sensores*
 
 - DHT22: Mide temperatura y humedad.
-
 - LDR: Determina el nivel de luz y calcula lux con una fórmula basada en resistencia.
-
 - Potenciómetros: Simulan velocidad del viento y calidad del aire.
 
 *Clasificación de la calidad del aire*
 
 - Mala: < 33
-
 - Regular: 33-65
-
 - Buena: > 66
 
 *Visualizada con LED RGB:*
 
 - Buena: verde
-
 - Regular: naranja
-
 - Mala: roja
 
 *Control automático de LEDs*
 
 - Si temperatura < 18 °C: LED azul (frío) encendido.
-
 - Si temperatura > 28 °C: LED rojo (calor) encendido.
-
 - Si luz < 300 lux: LED blanco (luz artificial) encendido.
 
 *Visualización en LCD*
 
 - Activada pulsando el botón.
-
 - Muestra:
 
 	1. Temperatura y humedad
-
 	2. Luz (lux) y viento (km/h)
-
 	3. Calidad del aire
 
 **Ciclo de ejecución (loop())**
 
 - Lee todos los sensores.
-
 - Clasifica condiciones y acciona LEDs.
-
 - Si se presiona el botón, muestra los datos en LCD durante 3 secciones.
-
 - Apaga la pantalla tras mostrar la información.
+
+**Ejemplos desarrollados para hacer la Actividad 2**
+- EJEMPLO 1.1 MOTOR DC: El motor DC no se encuentra en wokwi por lo que no podemos simularlo
+- EJEMPLO 1.2 SERVOMOTOR:  https://wokwi.com/projects/431474549549797377
+- EJEMPLO 1.3 MOTOR PASO A PASO: El motor unipolar paso a paso utilizado en el ejemplo no se encuentra en wokwi, ni tampoco el módulo controlador ULN2003A.
+- EJEMPLO 2.1 CONTROL DE 8 LEDS CON 74HC595: https://wokwi.com/projects/431558082395884545
+- EJEMPLO 2.2 LED PWM controlado por luz ambiental: https://wokwi.com/projects/431552436222161921
+- EJEMPLO 2.3 CONTROL DE 5 LEDS SEGÚN LSR: https://wokwi.com/projects/431556012018977793 
 
